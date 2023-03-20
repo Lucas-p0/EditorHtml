@@ -1,6 +1,4 @@
-﻿
-
-using Editor;
+﻿using Editor;
 
 namespace EditorHtml
 {

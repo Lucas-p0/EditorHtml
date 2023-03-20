@@ -14,8 +14,9 @@ namespace Editor
         {
             Console.Write("+");
             for (int i = 0; i <= 30; i++)
-
+            {
                 Console.Write("-");
+            }
 
             Console.Write("+");
             Console.Write("\n");
@@ -23,22 +24,20 @@ namespace Editor
             for (int lines = 0; lines <= 10; lines++)
             {
                 Console.Write("|");
-
                 for (int i = 0; i <= 30; i++)
                 {
                     Console.Write(" ");
                 }
                 Console.Write("|");
                 Console.Write("\n");
-
             }
+
             Console.Write("+");
             for (int i = 0; i <= 30; i++)
+            {
                 Console.Write("-");
-
+            }
             Console.Write("+");
-            Console.Write("\n");
-
 
         }
     }
