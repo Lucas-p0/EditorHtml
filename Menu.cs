@@ -7,6 +7,7 @@ namespace Editor
             Console.Clear();
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
+
             DrawScreen();
             WriteOption();
 
@@ -48,16 +49,17 @@ namespace Editor
             Console.WriteLine("Editor HTML");
             Console.SetCursorPosition(3, 3);
             Console.WriteLine("=============");
-            Console.SetCursorPosition(3, 5);
+            Console.SetCursorPosition(3, 4);
             Console.WriteLine("Selecione uma opção abaixo:");
-            Console.SetCursorPosition(3, 7);
+            Console.SetCursorPosition(3, 6);
             Console.WriteLine("1 - Novo arquivo");
-            Console.SetCursorPosition(3, 8);
+            Console.SetCursorPosition(3, 7);
             Console.WriteLine("2 - Abrir");
             Console.SetCursorPosition(3, 9);
             Console.WriteLine("0 - Sair");
             Console.SetCursorPosition(3, 10);
-            Console.WriteLine("Digite a opção desejada:");
+            Console.WriteLine("Opção: ");
+            Console.SetCursorPosition(9, 10);
             //Console.SetCursorPosition(3, 15);
 
 
