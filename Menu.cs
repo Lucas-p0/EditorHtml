@@ -9,6 +9,8 @@ namespace Editor
             Console.ForegroundColor = ConsoleColor.Black;
             DrawScreen();
             WriteOption();
+
+            var options = short.Parse(Console.ReadLine());
         }
 
         public static void DrawScreen()
@@ -52,9 +54,13 @@ namespace Editor
             Console.WriteLine("1 - Novo arquivo");
             Console.SetCursorPosition(3, 8);
             Console.WriteLine("2 - Abrir");
-            Console.SetCursorPosition(3, 10);
+            Console.SetCursorPosition(3, 9);
             Console.WriteLine("0 - Sair");
-            Console.SetCursorPosition(14, 14);
+            Console.SetCursorPosition(3, 10);
+            Console.WriteLine("Digite a opção desejada:");
+            //Console.SetCursorPosition(3, 15);
+
+
 
 
 
