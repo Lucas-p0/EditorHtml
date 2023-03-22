@@ -8,6 +8,7 @@ namespace Editor
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
             DrawScreen();
+            WriteOption();
         }
 
         public static void DrawScreen()
@@ -38,6 +39,15 @@ namespace Editor
                 Console.Write("-");
             }
             Console.Write("+");
+        }
+        public static void WriteOption()
+        {
+            Console.SetCursorPosition(3, 2);
+            Console.WriteLine("Editor HTML");
+            Console.SetCursorPosition(3, 3);
+            Console.WriteLine("Editor HTML");
+            Console.SetCursorPosition(3, 3);
+
 
         }
     }
