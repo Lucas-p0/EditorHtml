@@ -11,7 +11,8 @@ namespace Editor
             DrawScreen();
             WriteOption();
 
-            var options = short.Parse(Console.ReadLine());
+            var option = short.Parse(Console.ReadLine());
+            HandlerMenuOption(option);
         }
 
         public static void DrawScreen()
@@ -60,12 +61,22 @@ namespace Editor
             Console.SetCursorPosition(3, 10);
             Console.WriteLine("Opção: ");
             Console.SetCursorPosition(9, 10);
-            //Console.SetCursorPosition(3, 15);
-
-
-
-
-
+        }
+        public static void HandlerMenuOption(short option)
+        {
+            switch (option)
+            {
+                case 1: Console.WriteLine("Editor"); break;
+                case 2: Console.WriteLine("View"); break;
+                case 0:
+                    {
+                        Console.Clear();
+                        Environment.Exit(0);
+                        break;
+                    };
+                default:
+                    Show(); break;
+            }
         }
     }
 }
